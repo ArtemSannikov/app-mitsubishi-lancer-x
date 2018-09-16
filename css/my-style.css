@@ -1,0 +1,58 @@
+table {
+	width: 100%;
+	border-collapse: collapse;
+	border-spacing: 0;
+	border:1px solid #999;
+}
+	table td {
+		border:1px solid #999;
+		color: #333;
+		padding: 0 5px;
+	}
+
+img {
+	max-width:100%;
+	height:auto;
+}
+
+/*no disk icon & transparent icon*/
+
+.transparentButton {
+	background-color: transparent !important;
+	border: 0 !important;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+/* Word break */
+
+.ui-listview > li h2 {
+	white-space : normal;
+}
+
+.ui-listview > .ui-li-divider {
+	white-space: normal;
+}
+
+/* Blockquote style */
+
+blockquote.red {
+	border-left: 2px solid red;
+	padding: 0 0 0 10px;
+}
+
+blockquote.black {
+	border-left: 2px solid black;
+	padding: 0 0 0 10px;
+}
+
+blockquote.green {
+	border-left: 2px solid green;
+	padding: 0 0 0 10px;
+}
+
+
+blockquote.purple {
+	border-left: 2px solid purple;
+	padding: 0 0 0 10px;
+}
