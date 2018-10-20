@@ -1,0 +1,105 @@
+table {
+	width: 100%;
+	border-collapse: collapse;
+	border-spacing: 0;
+	border:1px solid #999;
+}
+	table td {
+		border:1px solid #999;
+		color: #333;
+		padding: 0 5px;
+	}
+
+img {
+	max-width:100%;
+	height:auto;
+}
+
+/*Стили шапки */
+div.ui-header > h1.ui-title {
+	text-shadow: none;
+}
+
+/*no disk icon & transparent icon*/
+
+.transparentButton {
+	background-color: transparent !important;
+	border: 0 !important;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+	a.ui-nodisc-icon.transparentButton.ui-btn.ui-btn-a {
+		-webkit-box-shadow: none;
+		box-shadow: none;
+	}
+
+/* Перенос слов в заголовках h2 */
+
+ul.ui-listview li h2 {
+	white-space : normal;
+	text-shadow: none;
+}
+	ul.ui-listview li a {
+		-webkit-box-shadow: none;
+		box-shadow: none;
+		text-shadow: none;		
+	}
+	ul.ui-listview li a.ui-btn:active {
+		-webkit-box-shadow: none;
+		box-shadow: none;
+		text-shadow: none;
+		border-top: 1px solid #dddddd;
+	}
+	ul.ui-listview li a.ui-btn:focus {
+		-webkit-box-shadow: none;
+		box-shadow: none;
+		background-color: #fafafa;
+		color: #333;
+		text-shadow: none;
+		border-top: 1px solid #dddddd;
+	}
+
+.ui-listview > .ui-li-divider {
+	white-space: normal;
+}
+
+/* Стили для цитат в статьях */
+
+blockquote.red {
+	border-left: 2px solid red;
+	padding: 0 0 0 10px;
+}
+
+blockquote.black {
+	border-left: 2px solid black;
+	padding: 0 0 0 10px;
+}
+
+blockquote.green {
+	border-left: 2px solid green;
+	padding: 0 0 0 10px;
+}
+
+
+blockquote.purple {
+	border-left: 2px solid purple;
+	padding: 0 0 0 10px;
+}
+
+/*Стили для навигации в подвале*/
+.ui-footer {
+	border: 0;
+}
+	.ui-footer ul li a.ui-link.ui-btn img {
+		display: block;
+		vertical-align: bottom;
+		margin: 0 auto;
+	}
+	.ui-footer ul li a.ui-link.ui-btn {
+		border: 0;
+		background-color: #c9302c;
+		box-shadow: none;
+	}
+	.ui-footer ul li a.ui-link.ui-btn:active {
+		background-color: #303030;
+	}
