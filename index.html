@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Charset -->
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Mitsubishi Lancer X</title>
+	<!-- Include meta tag to ensure proper rendering and touch zooming-->
+	<meta name="view-port" content="width=device-width, initial-scale=1">
+	<!-- Include jQuery Mobile stylesheets -->
+	<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+	<link rel="stylesheet" href="css/themes/my-theme.css" />
+	<link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="css/my-style.css" />
+	<!-- Include the jQuery Mobile library -->
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+	<!-- Include the jQuery Mobile library -->
+	<script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+	<!-- Open sidebar (left panel) on swipe -->
+	<script type="text/javascript" src="js/swipe-panel.js"></script>
+	<!-- cordova js -->
+	<script src="cordova.js"></script>
+</head>
+<body>
+
+<div data-role="page" id="home" data-theme="a">
+
+	<div data-role="header">
+		<h1 class="ui-title" role="heading">Mitsubishi Lancer X</h1>
+	</div>
+
+	<!-- Выезжающая панель слева -->
+	<div data-role="panel" id="left-panel" data-display="overlay" data-position="left" data-position-fixed="true">
+
+		<center><img src="images/logo.png" style="margin: 15px 0 40px 0;" width="240"></center>
+
+		<ul data-role="listview">
+
+			<li data-icon="false"><a href="main/about.html" data-transition="none" data-ajax="false">Информация о приложении</a></li>
+			<li data-icon="false"><a href="main/contact.html" data-transition="none" data-ajax="false">Контактная информация</a></li>
+			<li data-icon="false"><a href="main/donate.html" data-transition="none" data-ajax="false">Поддержать проект</a></li>
+			<li data-icon="false"><a href="#PopupReviewApp" data-rel="popup" data-position-to="window" data-transition="none">Оставить отзыв</a></li>
+		</ul>
+
+	</div>
+
+	<!-- Всплывающее окно: Оставить отзыв -->
+	<div data-role="popup" id="PopupReviewApp" data-overlay-theme="a" data-theme="a" data-dismissible="false">
+
+		<div data-role="header" data-theme="a">
+			<h1>Редирект</h1>
+		</div>
+
+		<div role="main" class="ui-content">
+			<h3 class="ui-title">Переход на Play Market</h3>
+			<p>Сейчас вы будете перенаправлены на страницу приложения в Play Market, где сможете оставить отзыв о приложении.</p>
+			<a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-a" data-rel="back">Отмена</a>
+			<a href="https://play.google.com/store/apps/details?id=mitsubishi.lancer.x" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-a" rel="external" data-transition="none">Перейти</a>
+		</div>
+
+	</div>
+
+	<!-- Контент -->
+	<div data-role="main" class="ui-content">
+
+		<!-- Список разделов -->
+		<ul data-role="listview" data-inset="false">
+
+			<!-- Предупреждающее сообщение: наполнение приложения -->
+			<li data-role="list-divider" style="background-color: #303030; border: 1px solid #303030;" role="heading" class="ui-li-divider ui-bar-inherit">Приложение находится на стадии наполнения контентом, так что информация будет появляться небольшими частями.</li>
+
+			<li data-icon="false">
+				<a href="article/chapter1/list.html" data-transition="none" data-ajax="false">
+					<img src="images/main_icon/chapter1.svg" width="56" height="56" style="padding: 12px 12px;" />
+					<h2>Устройство автомобиля</h2>
+				</a>
+			</li>
+
+			<li data-icon="false">
+				<a href="article/chapter2/list.html" data-transition="none" data-ajax="false">
+					<img src="images/main_icon/chapter2.svg" width="56" height="56" style="padding: 12px 12px;" />
+					<h2>Рекомендации по эксплуатации</h2>
+				</a>
+			</li>
+
+			<li data-icon="false">
+				<a href="article/chapter3/list.html" data-transition="none" data-ajax="false">
+					<img src="images/main_icon/chapter3.svg" width="56" height="56" style="padding: 12px 12px;" />
+					<h2>Неисправности в пути</h2>
+				</a>
+			</li>
+
+			<!-- <li data-icon="false">
+				<a href="article/chapter4/list.html" data-transition="none" data-ajax="false">
+					<img src="images/main_icon/chapter4.svg" width="56" height="56" style="padding: 12px 12px;" />
+					<h2>Техническое обслуживание</h2>
+				</a>
+			</li>
+
+			<li data-icon="false">
+				<a href="article/chapter5/list.html" data-transition="none" data-ajax="false">
+					<img src="images/main_icon/chapter5.svg" width="56" height="56" style="padding: 12px 12px;" />
+					<h2>Двигатель</h2>
+				</a>
+			</li>
+
+			<li data-icon="false">
+				<a href="article/chapter6/list.html" data-transition="none" data-ajax="false">
+					<img src="images/main_icon/chapter6.svg" width="56" height="56" style="padding: 12px 12px;" />
+					<h2>Трансмиссия</h2>
+				</a>
+			</li>
+
+			<li data-icon="false">
+				<a href="article/chapter7/list.html" data-transition="none" data-ajax="false">
+					<img src="images/main_icon/chapter7.svg" width="56" height="56" style="padding: 12px 12px;" />
+					<h2>Ходовая часть</h2>
+				</a>
+			</li>
+
+			<li data-icon="false">
+				<a href="article/chapter8/list.html" data-transition="none" data-ajax="false">
+					<img src="images/main_icon/chapter8.svg" width="56" height="56" style="padding: 12px 12px;" />
+					<h2>Рулевое управление</h2>
+				</a>
+			</li>-->
+
+			<li data-icon="false">
+				<a href="article/chapter9/list.html" data-transition="none" data-ajax="false">
+					<img src="images/main_icon/chapter9.svg" width="56" height="56" style="padding: 12px 12px;" />
+					<h2>Тормозная система</h2>
+				</a>
+			</li>
+
+			<!--<li data-icon="false">
+				<a href="article/chapter10/list.html" data-transition="none" data-ajax="false">
+					<img src="images/main_icon/chapter10.svg" width="56" height="56" style="padding: 12px 12px;" />
+					<h2>Электрооборудование</h2>
+				</a>
+			</li>
+
+			<li data-icon="false">
+				<a href="article/chapter11/list.html" data-transition="none" data-ajax="false">
+					<img src="images/main_icon/chapter11.svg" width="56" height="56" style="padding: 12px 12px;" />
+					<h2>Кузов</h2>
+				</a>
+			</li>-->
+
+			<li data-icon="false">
+				<a href="article/chapter12/list.html" data-transition="none" data-ajax="false">
+					<img src="images/main_icon/chapter12.svg" width="56" height="56" style="padding: 12px 12px;" />
+					<h2>Система вентиляции, отопления и кондиционирования</h2>
+				</a>
+			</li>
+
+			<li data-icon="false">
+				<a href="article/chapter13/list.html" data-transition="none" data-ajax="false">
+					<img src="images/main_icon/chapter13.svg" width="56" height="56" style="padding: 12px 12px;" />
+					<h2>Системы безопасности</h2>
+				</a>
+			</li>
+
+			<li data-icon="false">
+				<a href="article/chapter14/list.html" data-transition="none" data-ajax="false">
+					<img src="images/main_icon/chapter14.svg" width="56" height="56" style="padding: 12px 12px;" />
+					<h2>Зимняя эксплуатация автомобиля</h2>
+				</a>
+			</li>
+
+
+			<li data-icon="false">
+				<a href="article/chapter15/list.html" data-transition="none" data-ajax="false">
+					<img src="images/main_icon/chapter15.svg" width="56" height="56" style="padding: 12px 12px;" />
+					<h2>Колёса и шины</h2>
+				</a>
+			</li>
+
+
+			<li data-icon="false">
+				<a href="article/chapter16/list.html" data-transition="none" data-ajax="false">
+					<img src="images/main_icon/chapter16.svg" width="56" height="56" style="padding: 12px 12px;" />
+					<h2>Схемы электрооборудования</h2>
+				</a>
+			</li>
+			
+		</ul>
+
+	</div>
+
+	<!-- Footer -->
+	<div data-role="footer" data-position="fixed">
+		<div data-role="navbar">
+			<ul>
+				<li>
+					<a href="#left-panel" data-ajax="false"><img src="images/nav_bottom/menu.svg" width="24"></a>
+				</li>
+				<li>
+					<a href="configuration/list.html" data-ajax="false"><img src="images/nav_bottom/configuration.svg" width="24"></a>
+					</li>
+				<li>
+					<a href="shop/list.html" data-ajax="false"><img src="images/nav_bottom/shop.svg" width="24"></a>
+				</li>
+				<li>
+					<a href="obd2/list.html" data-ajax="false"><img src="images/nav_bottom/obd2.svg" width="24"></a>
+				</li>
+				<li>
+					<a href="club/list.html" data-ajax="false"><img src="images/nav_bottom/club.svg" width="24"></a>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+</div>
+
+</body>
+</html>
